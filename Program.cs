@@ -22,3 +22,5 @@ Player player = new Player(name);
 
 Console.WriteLine(Text.Language.Welcome , player.Name);
 
+House house = new House(player); 
+
