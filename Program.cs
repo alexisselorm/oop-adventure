@@ -1,14 +1,14 @@
 ﻿using OOPAdventure;
 
-var language = new English();
+Text.LoadLanguage(new English());
 
-Console.WriteLine(language.ChooseYourName);
+Console.WriteLine(Text.Language?.ChooseYourName);
 
 string? name = Console.ReadLine();
 
 if (name ==String.Empty)
 {
-    name = "Rabid Dog";
+    name = Text.Language?.DefaultName;
 }
 
 Player player = new Player(name);
@@ -20,5 +20,5 @@ Player player = new Player(name);
     
 // } while (name == String.Empty);
 
-Console.WriteLine($"Hello {player.Name}");
+Console.WriteLine(Text.Language.Welcome , player.Name);
 
