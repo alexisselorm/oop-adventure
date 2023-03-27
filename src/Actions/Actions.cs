@@ -17,4 +17,23 @@ namespace OOPAdventure;
 
         }
         
+        public void Register(Action action){
+            var name = action.Name.ToLower();
+
+            if (_registredActions.ContainsKey(name))
+                _registredActions[name] = action;
+            else
+                _registredActions.Add(name, action);
+        }
+
+        public void Execute(string[] args)
+        {
+            var actionName = args[0];
+            if (_registredActions.ContainsKey(actionName))
+                _registredActions[actionName].Execute(args);
+            else
+                Console.WriteLine(Text.Language.ActionError);
+                
+        }
+        
     }
