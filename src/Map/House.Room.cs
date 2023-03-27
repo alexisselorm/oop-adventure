@@ -19,7 +19,7 @@ namespace OOPAdventure;
                 var tmpRoom = new Room();
 
                 var c = i % Width; //Column
-                var r = i / Width; // Row
+                var r = i / Width; // Row calc
 
                 tmpRoom.Name = String.Format(Text.Language.DefaultName,i,c,r);
             }
