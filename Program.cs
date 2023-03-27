@@ -30,7 +30,7 @@ Actions.Instance.Register(new Go(house));
 
 house.GoToStartingRoom();
 
-var run =true;
+var run = true;
 
 Room? lastRoom = null;
 
