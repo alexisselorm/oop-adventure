@@ -1,7 +1,7 @@
 
 namespace OOPAdventure
 {
-    public abstract class Language
+    public abstract partial class Language
     {
         public string Welcome { get; protected set; } ="";        
         public string ChooseYourName { get; protected set; } ="";        
@@ -19,9 +19,5 @@ namespace OOPAdventure
         public string? Comma { get; protected set; }="";
         public string? Space { get; protected set; }="";
 
-        internal string JoinedWordList(string[] directions, string? and)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

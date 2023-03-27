@@ -21,7 +21,7 @@ namespace OOPAdventure;
                 var c = i % Width; //Column
                 var r = i / Width; // Row calc
 
-                tmpRoom.Name = String.Format(Text.Language.DefaultName,i,c,r);
+                tmpRoom.Name = String.Format(Text.Language.DefaultRoomName,i,c,r);
 
                 if (c < Width -1)
                 {

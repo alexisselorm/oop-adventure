@@ -31,6 +31,8 @@ namespace OOPAdventure
 
             var description = string.Format(Description, Text.Language.JoinedWordList(directions,Text.Language.And));
 
+            sb.Append(description);
+            
             return sb.ToString();
             
         }
