@@ -24,6 +24,7 @@ Console.WriteLine(Text.Language.Welcome , player.Name);
 
 House house = new House(player); 
 house.CreateRooms(3,3);//Create a house that is 3 columns wide and 3 rows tall
+house.DecorateRooms();
 
 Actions.Instance.Register(new Go(house));
 

@@ -9,7 +9,7 @@ namespace OOPAdventure
             DefaultName="Rabid Dog";
             Welcome="Hello {0}";
             DefaultRoomName = "Room {0} ({1},{2}).";
-            DefaultRoomDescription=" You are in a room with the doors to {0}";
+            DefaultRoomDescription=" You are in a {0} room with the doors to {1}";
             ActionError ="You can't do that";
             Go="Go";
             GoError="You can't go that way";
@@ -20,6 +20,15 @@ namespace OOPAdventure
             And ="and";
             Comma=",";
             Space=" ";
+           RoomDescriptions= new List<string>{
+            "normal",
+            "cold",
+            "warm",
+            "dark",
+            "bright",
+            "scary",
+            "strange",
+           }; 
 
         }
     }
