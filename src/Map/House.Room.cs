@@ -22,6 +22,23 @@ namespace OOPAdventure;
                 var r = i / Width; // Row calc
 
                 tmpRoom.Name = String.Format(Text.Language.DefaultName,i,c,r);
+
+                if (c < Width -1)
+                {
+                    tmpRoom.Neighbours[Directions.East] = CalculateRoomIndex(c+1,r);
+                }
+                if (c >0)
+                {
+                    tmpRoom.Neighbours[Directions.West] = CalculateRoomIndex(c-1,r);
+                }
+                if(r <Height -1){
+                    tmpRoom.Neighbours[Directions.South] = CalculateRoomIndex(c,r+1);
+                }
+                if (r >0)
+                {
+                    tmpRoom.Neighbours[Directions.North] = CalculateRoomIndex(c,r-1);
+                }
+                Rooms[i] = tmpRoom;
             }
         }
     }

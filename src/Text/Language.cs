@@ -13,7 +13,15 @@ namespace OOPAdventure
         public string? GoError { get; protected set; }="";
         public string? WhatToDo { get; protected set; }="";
         public string? Quit { get; protected set; }="";
+        public string? RoomNew { get; protected set; }="";
+        public string? RoomOld { get; protected set; }="";
+        public string? And { get; protected set; }="";
+        public string? Comma { get; protected set; }="";
+        public string? Space { get; protected set; }="";
 
-
+        internal string JoinedWordList(string[] directions, string? and)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

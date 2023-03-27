@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace OOPAdventure
 {
     public class Room
@@ -13,7 +15,25 @@ namespace OOPAdventure
             {Directions.None,-1},
         };
 
-        public bool Visited { get; set; }
+        public bool Visited { get; set; }   
+
+        public override string ToString(){
+            var sb = new StringBuilder();
+            if (Visited)
+                sb.Append(string.Format(Text.Language.RoomOld,Name));
+            else
+                sb.Append(string.Format(Text.Language.RoomNew,Name));
+
+            var names = Enum.GetNames(typeof(Directions));
+
+            var directions = (from p in names where Neighbours[(Directions)Enum.Parse(typeof(Directions), p)] > -1 select
+            p.ToLower()).ToArray();
+
+            var description = string.Format(Description, Text.Language.JoinedWordList(directions,Text.Language.And));
+
+            return sb.ToString();
+            
+        }
         
     }
 }

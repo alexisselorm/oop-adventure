@@ -15,6 +15,11 @@ namespace OOPAdventure
             GoError="You can't go that way";
             WhatToDo ="What do you want to do?";
             Quit = "quit";
+            RoomNew = "You entered {0}";
+            RoomOld = "You returned to {0}";
+            And ="and";
+            Comma=",";
+            Space=" ";
 
         }
     }
