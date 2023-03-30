@@ -29,6 +29,10 @@ namespace OOPAdventure
             "scary",
             "strange",
            }; 
+           NoItem="You do not have {0} in your inventory";
+           Backpack="Backpack";
+           BackpackError="You do not have anything in your backpack ";
+           BackpackDescription="Your backpack contains {0}";
 
         }
     }
