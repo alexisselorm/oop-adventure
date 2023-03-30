@@ -4,7 +4,7 @@ public class Backpack : Action
 {
     private readonly IInventory? _inventory;
 
-    public Backpack(Inventory inventory){
+    public Backpack(IInventory inventory){
         _inventory = inventory;
     }  
 
