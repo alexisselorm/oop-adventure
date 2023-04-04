@@ -26,8 +26,18 @@ House house = new House(player);
 house.CreateRooms(3,3);//Create a house that is 3 columns wide and 3 rows tall
 house.DecorateRooms();
 
+var items = new List<Item>(){
+    new Key(house),
+    new Chest(new[] {new Gold(100)},house)
+};
+
+house.PopulateRooms(items);
+
+
 Actions.Instance.Register(new Go(house));
 Actions.Instance.Register(new Backpack(player));
+Actions.Instance.Register(new Take(house));
+Actions.Instance.Register(new Use(house));
 
 house.GoToStartingRoom();
 

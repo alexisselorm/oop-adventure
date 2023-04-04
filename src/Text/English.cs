@@ -38,6 +38,22 @@ namespace OOPAdventure
            Key="key";
            ChestEmpty="Chest is empty";
            ChestFound="You have found: {0}";
+           Gold="{0} gold {1}";
+           Coin = "coin";
+           Coins= Coin + "s";
+           Plural = "s";
+           Is="is";
+           Are="are";
+           TotalItems ="There {0} {1} item{2} in the room: ";
+           Period = ".";
+           Take="Take";
+           TakeError="There is nothing to take.";
+           NotTaken="You can't take that.";
+           TookDescription="You took a {0}";
+           CantTakeDescription="You can't take the {0}";
+           Use="Use";
+           UseSuccess="You used the {0}";
+           UseError="You can't use that";
 
         }
     }
