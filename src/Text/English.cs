@@ -30,9 +30,14 @@ namespace OOPAdventure
             "strange",
            }; 
            NoItem="You do not have {0} in your inventory";
-           Backpack="Backpack";
+           Backpack="backpack";
            BackpackError="You do not have anything in your backpack ";
            BackpackDescription="Your backpack contains {0}";
+           Chest="chest";
+           UnlockChest="You have unlocked the chest";
+           Key="key";
+           ChestEmpty="Chest is empty";
+           ChestFound="You have found: {0}";
 
         }
     }
